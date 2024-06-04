@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi Drive</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .overview-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .overview-header {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .overview-content {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+        }
+        .overview-img {
+            max-width: 45%;
+            height: 450px;
+            margin-right: 20px;
+        }
+        .overview-details {
+            max-width: 50%;
+        }
+        @media screen and (max-width: 1200px) {
+            .overview-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .overview-img {
+                max-width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .overview-details {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="overview-header">
+        <h1>Nairobi Drive Overview</h1>
+    </header>
+    <main class="overview-container">
+        <div class="overview-content">
+            <img src="../assets/nairobi .png" alt="Nairobi Drive" class="overview-img">
+            <div class="overview-details">
+                <h2>Client: Nairobi Drive</h2>
+                <p><strong>Website:</strong> <a href="https://nairobidrive.shop">nairobidrive.shop</a></p>
+                <p><strong>Products:</strong> Cars, Car Accessories</p>
+                <p>Nairobi Drive is a prominent car selling company specializing in providing a wide range of vehicles and car accessories. They offer high-quality products from trusted brands, ensuring customers get the best value. Nairobi Drive aims to deliver exceptional customer service and a user-friendly online shopping experience.</p>
+                <h3>Technology Used</h3>
+                <ul>
+                    <li>Next.js: Powers the website with a robust framework for server-side rendering and static site generation.</li>
+                    <li>React: Used for building the dynamic and responsive user interface.</li>
+                    <li>TypeScript: Enhances the development process with type safety and robust tooling.</li>
+                    <li>Tailwind CSS: Provides a utility-first approach to styling, enabling rapid and efficient design.</li>
+                </ul>
+                <h3>Website Features</h3>
+                <ul>
+                    <li>Responsive Design: Ensures optimal viewing on both desktop and mobile devices.</li>
+                    <li>Easy Navigation: Intuitive layout to help customers find vehicles and accessories quickly.</li>
+                    <li>Detailed Product Info: Comprehensive descriptions and high-quality images of all products.</li>
+                    <li>Customer Support: Accessible and responsive support to assist with any inquiries.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nairobi Drive</p>
+    </footer>
+</body>
+</html>
+

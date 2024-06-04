@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDevine</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .overview-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .overview-header {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .overview-content {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+        }
+        .overview-img {
+            max-width: 45%;
+            height: 400px;
+            margin-right: 20px;
+        }
+        .overview-details {
+            max-width: 50%;
+        }
+        @media screen and (max-width: 1200px) {
+            .overview-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .overview-img {
+                max-width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .overview-details {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="overview-header">
+        <h1>WebDevine Overview</h1>
+    </header>
+    <main class="overview-container">
+        <div class="overview-content">
+            <img src="../assets/webdevine.png" alt="WebDevine" class="overview-img">
+            <div class="overview-details">
+                <h2>Client: WebDevine</h2>
+                <p><strong>Website:</strong> <a href="https://webdevine.shop">webdevine.shop</a></p>
+                <p><strong>Focus:</strong> Marketing Strategist for Web Design</p>
+                <p>WebDevine specializes in connecting clients with skilled web developers to create stunning web designs for businesses. They focus on strategic marketing to ensure clients get the best web solutions tailored to their needs. WebDevine is dedicated to delivering top-notch service and innovative web design solutions.</p>
+                <h3>Technology Used</h3>
+                <ul>
+                    <li>WordPress: The core platform for building and managing the website.</li>
+                    <li>HTML & CSS: Used for structuring and styling the website, ensuring a professional and responsive design.</li>
+                    <li>Important Plugins: Leveraged to enhance website functionality and user experience.</li>
+                </ul>
+                <h3>Website Features</h3>
+                <ul>
+                    <li>Responsive Design: Ensures the website looks great on both desktop and mobile devices.</li>
+                    <li>User-Friendly Navigation: Easy to navigate, helping clients find the right web developers quickly.</li>
+                    <li>Secure Transactions: Integrated secure payment options for safe dealings.</li>
+                    <li>Detailed Developer Profiles: Comprehensive profiles and portfolios of web developers.</li>
+                    <li>Customer Support: Responsive support to assist with any queries or issues.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 WebDevine</p>
+    </footer>
+</body>
+</html>
