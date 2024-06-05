@@ -1,5 +1,4 @@
 /* GENERAL */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 *{
@@ -21,7 +20,7 @@ p {
 
 /* TRANSITION */
 
-a
+a,
 .btn {
     transition: all 300ms ease;
 }
@@ -149,7 +148,7 @@ a:hover {
 
 /* SECTIONS */
 
-section{
+section {
     padding-top: 4vh;
     height: 96vh;
     margin: 0 10rem;
@@ -181,6 +180,7 @@ section{
     align-self: center;
     text-align: center;
 }
+
 .section__text p {
     font-weight: 600;
 }
@@ -241,9 +241,11 @@ section{
     background: rgb(53, 53, 53);
     color: white;
 }
+
 .btn-color-1:hover {
     background: rgb(0, 0, 0);
 }
+
 .btn-color-2 {
     background: none;
 }
@@ -289,20 +291,19 @@ section{
 }
 
 .details-container {
-   padding: 1.5rem; 
-   flex: 1;
-   background: white;
-   border-radius: 2rem;
-   border: rgb(53, 53, 53) 0.1rem solid;
-   border-color: rgb(163, 163, 163);
-   text-align: center;
-   margin: 0.3rem;
+    padding: 1.5rem; 
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    margin: 0.3rem;
 }
 
 .section-container {
     gap: 1.2rem;
     height: 78%;
-    
 }
 
 .section__pic-container {
@@ -363,31 +364,31 @@ article .icon {
 
 /* PROJECTS SECTION */
 
- #projects {
+#projects {
     position: relative;
-  }
-  
-  .color-container {
+}
+
+.color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
-  }
-  
-  .project-img {
+}
+
+.project-img {
     border-radius: 2rem;
     width: 90%;
     height: 90%;
-  }
-  
-  .project-title {
+}
+
+.project-title {
     margin: 1rem;
     color: black;
-  }
-  
-  .project-btn {
+}
+
+.project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
-  }
-  
+}
+
 /* CONTACT */
 
 #contacts {
@@ -396,33 +397,33 @@ article .icon {
     align-items: center;
     text-align: center;
     padding: 4rem 0;
-  }
-  
-  .contact-container {
+}
+
+.contact-container {
     width: 100%;
     max-width: 600px;
     margin: 2rem auto;
-  }
-  
-  .contact-left {
+}
+
+.contact-left {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .contact-inputs {
+}
+
+.contact-inputs {
     width: calc(100% - 2rem);
     margin: 0.5rem 0;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
-  }
+}
 
-  .message-input {
+.message-input {
     height: 125px; /* Increase the height of the textarea */
-  }
-  
-  .contact-left button {
+}
+
+.contact-left button {
     padding: 0.5rem 1.5rem; /* Increase padding for better appearance */
     border: none;
     border-radius: 0.5rem;
@@ -431,20 +432,20 @@ article .icon {
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s, transform 0.3s; /* Add transitions for hover effects */
-  }
-  
-  .contact-left button:hover {
+}
+
+.contact-left button:hover {
     background-color: #555; /* Darker background on hover */
     transform: scale(1.05); /* Slightly increase size on hover */
-  }
-  
-  .contact-left button:active {
+}
+
+.contact-left button:active {
     background-color: #222; /* Even darker background on click */
     transform: scale(0.95); /* Slightly decrease size on click */
-  }
-  
-  /* Contact info container styling */
-  .contact-info-upper-container {
+}
+
+/* Contact info container styling */
+.contact-info-upper-container {
     display: flex;
     flex-direction: row-reverse; /* Align items from right to left */
     justify-content: space-between; /* Space items evenly */
@@ -458,45 +459,99 @@ article .icon {
     margin: 0; /* Remove margin */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-  }
-  
-  .contact-info-container {
+}
+
+.contact-info-container {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     margin: 1rem;
-  }
-  
-  .contact-info-container p {
+}
+
+.contact-info-container p {
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
     margin: 0;
-  }
-  
-  .contact-info-container a {
+}
+
+.contact-info-container a {
     text-decoration: none;
     color: inherit; /* Use the same color as the text */
-  }
-  
-  .contact-icon {
+}
+
+.contact-icon {
     cursor: default;
-  }
-  
-  .email-icon {
+}
+
+.email-icon {
     height: 2.5rem;
-  }
-  
-  /* FOOTER SECTION */
-  
-  footer {
+}
+
+/* FOOTER SECTION */
+
+footer {
     height: 23vh;
     margin: 0 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  footer p {
+}
+
+footer p {
     text-align: center;
     margin: 0;
-  }
+}
+
+/* ADDITIONS */
+
+#read-more-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#read-more-btn:hover {
+    background-color: #555;
+}
+
+.menu-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.menu-links.open {
+    display: flex;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    background-color: #000;
+    height: 3px;
+    width: 25px;
+    display: block;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
