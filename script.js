@@ -15,13 +15,18 @@ function toggleMenu() {
 function toggleReadMore() {
     var moreText = document.getElementById("more-text");
     var btnText = document.getElementById("read-more-btn");
+    var containers = document.getElementById("about-containers");
 
-    if (moreText.style.display === "none" || moreText.style.display === "") {
-        moreText.style.display = "inline";
-        btnText.innerHTML = "Read Less"; 
+    if (moreText.classList.contains("collapsed")) {
+        moreText.classList.remove("collapsed");
+        moreText.classList.add("expanded");
+        containers.classList.add("hidden-containers");
+        btnText.innerHTML = "Read Less";
     } else {
-        moreText.style.display = "none";
-        btnText.innerHTML = "Read More"; 
+        moreText.classList.remove("expanded");
+        moreText.classList.add("collapsed");
+        containers.classList.remove("hidden-containers");
+        btnText.innerHTML = "Read More";
     }
 }
 
@@ -43,7 +48,7 @@ function closeMenuOnClickOutside(event) {
 // Ensure the DOM is fully loaded before adding event listeners
 document.addEventListener('DOMContentLoaded', (event) => {
     // Hide the additional content on initial load
-    document.getElementById("more-text").style.display = "none";
+    document.getElementById("more-text").classList.add("collapsed");
 
     // Add event listeners to the menu links
     const menuLinks = document.querySelectorAll(".menu-links li a");

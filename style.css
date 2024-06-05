@@ -1,7 +1,7 @@
 /* GENERAL */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -19,16 +19,14 @@ p {
 }
 
 /* TRANSITION */
-
 a,
 .btn {
     transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
-
-nav, 
-.nav-links{
+nav,
+.nav-links {
     display: flex;
 }
 
@@ -66,7 +64,6 @@ a:hover {
 }
 
 /* HAMBURGER-MENU */
-
 #hamburger-nav {
     display: none;
 }
@@ -89,8 +86,7 @@ a:hover {
     width: 100%;
     height: 2px;
     background-color: black;
-    transition: all 0.3 ease-in-out; 
-    opacity: 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-links {
@@ -99,9 +95,9 @@ a:hover {
     right: 0;
     background-color: white;
     width: 200px;
-    max-height: 0%;
+    max-height: 0;
     overflow: hidden;
-    transition: all 0.3 ease-in-out;
+    transition: max-height 0.3s ease-in-out;
 }
 
 .menu-links a {
@@ -111,7 +107,7 @@ a:hover {
     font-size: 1.5rem;
     color: black;
     text-decoration: none;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-links li {
@@ -123,7 +119,7 @@ a:hover {
 }
 
 .hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
 .hamburger-icon.open span:nth-child(2) {
@@ -131,23 +127,10 @@ a:hover {
 }
 
 .hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span:first-child{
-    transform: none;
-}
-
-.hamburger-icon span:first-child{
-    opacity: 1;
-}
-
-.hamburger-icon span:first-child{
-    transform: none;
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* SECTIONS */
-
 section {
     padding-top: 4vh;
     height: 96vh;
@@ -161,7 +144,6 @@ section {
 }
 
 /*PROFILE SECTION*/
-
 #profile {
     display: flex;
     justify-content: center;
@@ -207,14 +189,12 @@ section {
 }
 
 /* ICONS */
-
 .icon {
     cursor: pointer;
     height: 2rem;
 }
 
 /* BUTTONS */
-
 .btn-container {
     display: flex;
     justify-content: center;
@@ -229,15 +209,18 @@ section {
     border-radius: 2rem;
 }
 
-.btn-color-1, .btn-color-2 {
+.btn-color-1,
+.btn-color-2 {
     border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.btn-color-1:hover, .btn-color-2:hover {
+.btn-color-1:hover,
+.btn-color-2:hover {
     cursor: pointer;
 }
 
-.btn-color-1, .btn-color-2:hover {
+.btn-color-1,
+.btn-color-2:hover {
     background: rgb(53, 53, 53);
     color: white;
 }
@@ -259,7 +242,6 @@ section {
 }
 
 /*ABOUT SECTION*/
-
 #about {
     position: relative;
 }
@@ -276,7 +258,8 @@ section {
     flex-direction: column;
 }
 
-.about-containers, .about-details-container {
+.about-containers,
+.about-details-container {
     display: flex;
 }
 
@@ -324,7 +307,6 @@ section {
 }
 
 /* EXPERIENCE SECTION */
-
 #experience {
     position: relative;
 }
@@ -363,34 +345,60 @@ article .icon {
 }
 
 /* PROJECTS SECTION */
-
 #projects {
     position: relative;
+    padding: 4rem 1rem; /* Add padding for better spacing */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Create three equal columns */
+    gap: 2rem; /* Add gap between the grid items */
+    justify-items: center; /* Center items horizontally */
+    align-items: start; /* Align items to the top */
 }
 
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
+    padding: 1rem; /* Add padding for better spacing */
+    border-radius: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
 .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Limit the height of the images */
+    object-fit: cover; /* Cover the container proportionally */
 }
 
 .project-title {
-    margin: 1rem;
+    margin: 1rem 0;
     color: black;
+    font-size: 1.5rem; /* Adjust font size as needed */
 }
 
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+    padding: 0.5rem 1rem; /* Adjust padding for better appearance */
+}
+
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* One column for mobile devices */
+    }
 }
 
 /* CONTACT */
-
 #contacts {
     display: flex;
     flex-direction: column;
@@ -447,25 +455,27 @@ article .icon {
 /* Contact info container styling */
 .contact-info-upper-container {
     display: flex;
-    flex-direction: row-reverse; /* Align items from right to left */
-    justify-content: space-between; /* Space items evenly */
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-around; /* Distribute items evenly */
     align-items: center;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     background-color: rgb(250, 250, 250); /* Light background color */
-    padding: 0.1rem 1rem; /* Add padding */
+    padding: 1rem; /* Add padding */
     width: 75vw; /* Full viewport width */
-    margin: 0; /* Remove margin */
+    margin: 2rem auto; /* Center the container and add margin */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
 .contact-info-container {
     display: flex;
+    flex-direction: column; /* Align items vertically */
     align-items: center;
     gap: 0.5rem;
-    margin: 1rem;
+    margin: 1rem; /* Add margin for spacing */
+    text-align: center; /* Center text within each container */
 }
 
 .contact-info-container p {
@@ -488,7 +498,6 @@ article .icon {
 }
 
 /* FOOTER SECTION */
-
 footer {
     height: 23vh;
     margin: 0 1rem;
@@ -503,7 +512,6 @@ footer p {
 }
 
 /* ADDITIONS */
-
 #read-more-btn {
     background-color: #333;
     color: #fff;
@@ -518,6 +526,20 @@ footer p {
 
 #read-more-btn:hover {
     background-color: #555;
+}
+
+#more-text.collapsed {
+    display: none;
+}
+
+/* Transition Effect for More Text */
+#more-text.expanded {
+    display: inline;
+}
+
+/* Hiding containers when Read More is clicked */
+.hidden-containers {
+    display: none;
 }
 
 .menu-links {
