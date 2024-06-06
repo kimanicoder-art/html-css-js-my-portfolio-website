@@ -132,6 +132,18 @@
             height: 2rem; /* Adjust icon size for smaller screens */
         }
 
+        footer {
+            height: 10vh;
+            margin: 0 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        footer p {
+            text-align: center;
+            margin: 0;
+
    
 }
 

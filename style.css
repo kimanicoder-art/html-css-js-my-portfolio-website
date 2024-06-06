@@ -458,13 +458,13 @@ article .icon {
     flex-direction: row; /* Align items in a row */
     justify-content: space-around; /* Distribute items evenly */
     align-items: center;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     background-color: rgb(250, 250, 250); /* Light background color */
-    padding: 1rem; /* Add padding */
+    padding: o.1rem; /* Add padding */
     width: 75vw; /* Full viewport width */
-    margin: 2rem auto; /* Center the container and add margin */
+    margin: 0.1rem auto; /* Center the container and add margin */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
@@ -499,7 +499,7 @@ article .icon {
 
 /* FOOTER SECTION */
 footer {
-    height: 23vh;
+    height: 35vh;
     margin: 0 1rem;
     display: flex;
     justify-content: center;
@@ -576,4 +576,26 @@ footer p {
 
 .hamburger-icon.open span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Add some margin or padding to the sections */
+#projects, #invitation, #contacts {
+    padding: o.1rem 0; /* Add padding to the top and bottom */
+}
+
+#toggle-projects-btn {
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#toggle-projects-btn:hover {
+    background-color: #555;
 }
